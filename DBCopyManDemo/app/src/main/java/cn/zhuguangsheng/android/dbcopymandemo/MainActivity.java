@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
      * after start this service, you can use adb command to pull sqlite db to pc with the following steps:
      * 1.   adb shell am broadcast -a cn.zhuguangsheng.android.DbCopyManService.action.ACTION_STARTCOPYDB
      * 2.   wait a few seconds for the db copying procedure by using "ping -n 5 127.0.0.1"
-     * 3.   set android_download_dir_filename="/mnt/internal_sd/Download/mydb.db"
-     *      set LOCAL_DB_NAME="mydb.db"
+     * 3.   set android_download_dir_filename="/mnt/internal_sd/Download/my.db"
+     *      set LOCAL_DB_NAME="my.db"
      * 4.   adb pull %android_download_dir_filename% %LOCAL_DB_NAME%
      */
     private void startDBCopyManService(){
